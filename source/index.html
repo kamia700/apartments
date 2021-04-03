@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Apartments">
+  <meta name="Keywords" content="Apartments">
+  <title>Apartments</title>
+
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+  </header>
+
+  <main class="page-main">
+    <section class="catalog">
+      <h1 class="catalog__title">Our Latest Developments</h1>
+      <section class="catalog__filter filter container">
+        <form action="post">
+          <div class="filter__wrap">
+            <label for="filter">Filter</label>
+            <input type="text" name="text" id="filter">
+            <button class="visually-hidden" type="submit" aria-label="search"></button>
+          </div>
+        </form>
+      </section>
+
+      <section class="catalog__list container">
+        <ul>
+        </ul>
+        <div class="catalog__btn more">
+          <button type="button" aria-label="See more">See more</button>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+   <template id="card">
+    <li class="catalog__item item" id="SupportAvailable">
+      <a href="/details/[id]">
+        <div class="item__img">
+          <picture>
+            <source type="image/webp" srcset="#">
+            <img src="#" srcset="#" width="377" height="227" alt="Grove Court">
+          </picture>
+          <div class="item__tag">Restaurant & Support</div>
+        </div>
+        <div class="item__content">
+          <div class="item__title">Grove Court</div>
+          <p class="item__address">19-23 Cambridge Road</p>
+          <p>New Properties for Sale from <span class="item__price">214,999</span></p>
+          <p class="item__text">Shared Ownership Available</p>
+        </div>
+      </a>
+    </li>
+  </template>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

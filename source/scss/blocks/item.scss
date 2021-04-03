@@ -1,0 +1,74 @@
+.item a {
+  &:hover {
+    opacity: 0.95;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.item__img img {
+  display: block;
+  width: 100%;
+}
+
+.item__img {
+  position: relative;
+}
+
+.item__img .item__tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 30px;
+
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.SupportAvailable .item__tag {
+  background-color: $orange-tag;
+}
+
+.IndependentLiving .item__tag  {
+  background-color: $green-tag;
+}
+
+.item__content {
+  padding: 20px;
+}
+
+.item__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+
+}
+
+.item__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  margin: 5px 0;
+}
+
+.item__content .item__address {
+  margin-bottom: 20px;
+}
+
+.item__content .item__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.item__price {
+  font-weight: 700;
+}
