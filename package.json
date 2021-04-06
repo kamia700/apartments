@@ -1,7 +1,7 @@
 {
-  "name": "jewellery",
+  "name": "apartments",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки jewellery",
+  "description": "start template",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

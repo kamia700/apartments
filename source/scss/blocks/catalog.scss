@@ -57,6 +57,7 @@
   color: $main-text;
   padding-right: 20px;
   cursor: pointer;
+  outline: none;
 
   &::before {
     content: url("../images/tick.svg");
@@ -73,6 +74,10 @@
   }
 
   &:focus {
+    opacity: 0.8;
+  }
+
+  &:disabled {
     opacity: 0.5;
   }
 }

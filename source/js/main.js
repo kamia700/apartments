@@ -86,14 +86,27 @@ var createCard = function (card) {
 var CARD_NUMBER = 6;
 var listElement = document.querySelector('.catalog__list ul');
 
-var renderCard = function (data) {
-    listElement.insertBefore(createCard(data), null);
+var buttonMore = document.querySelector('.catalog__btn button');
+var currentIndex = 0;
+
+var loadMore = function (items) {
+  var maxRes = 6;
+  for (var i=0; i<maxRes; i++) {
+    if (currentIndex >= items.length) {
+      buttonMore.setAttribute("disabled", "disabled");
+      return
+    }
+    listElement.appendChild(createCard(items[i+currentIndex]));
+  }
+  currentIndex += maxRes;
 };
+
 
 $.ajax('https://603e38c548171b0017b2ecf7.mockapi.io/homes', {
   success: function(data) {
-    data.forEach(function (el) {
-      renderCard(el);
+    loadMore(data);
+    buttonMore.addEventListener("click", function(){
+      loadMore(data);
     });
   }
 });
