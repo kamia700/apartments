@@ -4,6 +4,7 @@
   line-height: 24px;
   font-weight: bold;
   padding-right: 15px;
+  padding-top: 13px;
 }
 
 .filter {
@@ -16,11 +17,12 @@
     font-weight: normal;
 
     padding: 7px 15px;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
     width: 417px;
     border-radius: 25px;
     border: 1px solid $btn-border;
     outline: none;
+    height: 50px;
   }
 }
 
