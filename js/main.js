@@ -10,7 +10,7 @@ var checkFilter = function () {
     var val = this.value.trim();
     var filterItems = document.querySelectorAll('.catalog__list li');
 
-    if (val.length >= 3) {
+    if (val.length >= 1) {
       filterItems.forEach(function(el) {
         var filterText = el.querySelector('.catalog__list .item__title');
         var text = filterText.innerText.toLowerCase();
